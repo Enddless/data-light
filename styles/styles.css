@@ -749,12 +749,7 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  row-gap: var(-section-padding-y);
-}
-@media (max-width: 1280px) {
-  .hero {
-    row-gap: 130px;
-  }
+  row-gap: var(--section-padding-y);
 }
 @media (max-width: 767px) {
   .hero {
