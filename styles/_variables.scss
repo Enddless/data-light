@@ -1,0 +1,50 @@
+:root {
+  --color-dark: #172224;
+
+  --color-light: #fff;
+  --color-accent: #b1fe33;
+
+  --color-gray: #f3f3f3;
+  --color-gray-alt: #898989;
+  // fonts
+  --font-family-base: 'Mulish-Regular', sans-serif;
+  --font-family-second: 'Unbounded-Regular', sans-serif;
+  --font-family-third: 'Unbounded-Semibold', sans-serif;
+
+  //  button
+  --cl-border-btn: #d0fc1b;
+  --cl-background-btn: linear-gradient(
+    180deg,
+    rgb(177, 254, 51) 11%,
+    rgba(23, 34, 36, 0.3)
+  );
+  // gradints for cards
+  --gr-bg-1: linear-gradient(102deg, #d4ff00 0%, #27f7f8 70%);
+  --gr-bg-2: linear-gradient(109deg, #d4ff00 0%, #27f7f8 70%);
+  --gr-bg-3: linear-gradient(107deg, #d4ff00 0%, #27f7f8 70%);
+
+  --button-height: 50px;
+  --cl-text-btn: #172224;
+
+  --border-radius: 14px;
+  --border-radius-small: 7px;
+  --border-radius-large: 30px;
+
+  --shadow: 0 5px 0 0 var(--color-dark);
+
+  --container-width: 1472px;
+  --container-padding-x: 20px;
+
+  --section-padding-y: 74px;
+  --input-height: 64px;
+
+  --transition-duration: 1s;
+
+  @include desktop {
+    --section-padding-y: 50px;
+  }
+
+  @include mobile {
+    --section-padding-y: 30px;
+  }
+}

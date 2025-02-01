@@ -1,0 +1,28 @@
+.card {
+  display: flex;
+  column-gap: 20px;
+  border-radius: var(--border-radius-large);
+  box-shadow: var(--shadow);
+
+  &--colored {
+    background-color: #292929;
+  }
+
+  &--gradient1 {
+    background: var(--gr-bg-1), #defc1e;
+    background-blend-mode: multiply;
+    color: #3d3a3a;
+  }
+
+  &--gradient2 {
+    background: var(--gr-bg-2), #defc1e;
+    background-blend-mode: multiply;
+    color: #3d3a3a;
+  }
+
+  &--gradient3 {
+    background: var(--gr-bg-3), #defc1e;
+    background-blend-mode: multiply;
+    color: #3d3a3a;
+  }
+}

@@ -1,0 +1,82 @@
+.header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 40px;
+
+    @include tablet {
+      column-gap: 30px;
+    }
+  }
+
+  &__logo {
+    @include tablet {
+      max-width: 120px;
+    }
+    @include mobile {
+      max-width: 144px;
+    }
+  }
+  &__menu {
+    font-family: var(--font-family-second);
+
+    &-list {
+      display: flex;
+      align-items: center;
+      column-gap: 40px;
+
+      @include desktop {
+        column-gap: 20px;
+      }
+    }
+
+    &-link {
+      @include fluid-text(16, 14);
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      height: 48px;
+
+      color: #fff;
+
+      @include hover {
+        color: var(--color-accent);
+        &::after {
+          width: 100%;
+        }
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        translate: -50%;
+        width: 0;
+        height: 2px;
+        background-color: currentColor;
+        transition-duration: inherit;
+      }
+    }
+  }
+
+  &__call-to-action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    & .header__phone * {
+      --currentcolor: #d4ff00;
+      fill: var(--currentcolor);
+    }
+  }
+  &__button {
+    height: 48px;
+    padding-inline: 18px;
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,29 @@
+.section {
+  padding-block: var(--section-padding-y);
+
+  &__title {
+    @include fluid-text(48, 26);
+    font-family: var(--font-family-third);
+    font-weight: 800;
+    line-height: 120%;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+
+    @include mobile {
+      flex-direction: column;
+      row-gap: 30px;
+      text-align: center;
+    }
+    &:not(:last-child) {
+      margin-bottom: 80px;
+
+      @include mobile {
+        margin-bottom: 40px;
+      }
+    }
+  }
+}

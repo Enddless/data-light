@@ -1,0 +1,13 @@
+.input {
+  border-radius: var(--border-radius);
+  padding: 12px 24px;
+  width: 100%;
+  background: #292929;
+  color: var(--color-light);
+  resize: none;
+
+  &:focus,
+  &:active {
+    outline: 2px solid var(--cl-border-btn);
+  }
+}

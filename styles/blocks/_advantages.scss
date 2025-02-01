@@ -1,0 +1,32 @@
+.advantages {
+  &__item {
+    grid-column: span 3;
+    border-radius: var(--border-radius-large);
+    overflow: hidden;
+
+    @include tablet {
+      grid-column: span 6;
+    }
+    @include mobile {
+      grid-column: span 12;
+    }
+
+    &--mobile-bordered {
+      @include tablet {
+        background-color: #292929;
+      }
+    }
+  }
+
+  &__button {
+    position: relative;
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  &__wrapper {
+    background: var(--cl-background-btn);
+    border-radius: var(--border-radius-large);
+    padding: 2px 1px 0 1px;
+  }
+}

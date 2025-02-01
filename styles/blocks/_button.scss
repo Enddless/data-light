@@ -1,0 +1,49 @@
+.button {
+  @include flex-center(true);
+
+  height: var(--button-height);
+  color: var(--cl-text-btn);
+  cursor: pointer;
+  background: var(--gr-bg-1);
+  border: 2px solid var(--cl-border-btn);
+  border-radius: var(--border-radius-large);
+  overflow: hidden;
+  font-family: var(--font-family-third);
+  font-size: 16px;
+  text-align: center;
+  padding: 12px 24px;
+  position: relative;
+
+  @include mobile {
+    width: 100%;
+  }
+
+  &:after {
+    background: var(--gr-bg-2), #defc1e;
+    background-blend-mode: multiply;
+
+    content: '';
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: var(--transition-duration);
+    width: 100%;
+    z-index: 1;
+  }
+  &:hover:after {
+    opacity: 1;
+  }
+
+  & span,
+  & svg {
+    position: relative;
+    z-index: 2;
+  }
+
+  &--transparent {
+    background: transparent;
+    color: var(--color-light);
+  }
+}

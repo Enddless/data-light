@@ -1,0 +1,17 @@
+.materials {
+  &__list {
+    margin-bottom: 66px;
+  }
+  &__item {
+    grid-column: span 4;
+
+    @include tablet {
+      grid-column: span 12;
+    }
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,62 @@
+.advantages-card {
+  &__body {
+    height: 243px;
+    width: 100%;
+    padding: 38px 29px;
+    position: relative;
+    border-radius: var(--border-radius-large);
+    overflow: hidden;
+
+    @include tablet {
+      padding: 18px;
+    }
+    @include mobile {
+      height: 150px;
+    }
+
+    &:has(.advantages-card__title--transparent) {
+      padding: 0;
+      border: none;
+      background: transparent;
+
+      @include tablet {
+        padding: 18px;
+      }
+    }
+  }
+  &__icon {
+    position: absolute;
+    bottom: 25px;
+    right: 29px;
+  }
+
+  &__icon *[fill] {
+    --currentcolor: #b1fe33;
+    fill: var(--currentcolor);
+  }
+  &__title {
+    @include fluid-text(32, 20);
+
+    line-height: 38px;
+
+    @include mobile {
+      line-height: 30px;
+    }
+
+    &--transparent {
+      & span {
+        @include fluid-text(85, 20);
+        font-family: var(--font-family-third);
+        line-height: 120px;
+        text-transform: uppercase;
+        -webkit-text-stroke: 1px #ffffff;
+        text-stroke: 1px #ffffff;
+        color: transparent;
+
+        @include mobile {
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.title-content {
+  @include fluid-text(32, 26);
+  font-family: var(--font-family-third);
+  font-weight: 600;
+
+  line-height: 29px;
+
+  &--accent {
+    @include fluid-text(24, 20);
+    color: var(--color-accent);
+  }
+}

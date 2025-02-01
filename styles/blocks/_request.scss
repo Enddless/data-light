@@ -1,0 +1,64 @@
+.request {
+  background: linear-gradient(76deg, #d4ff00 0%, #27f7f8 95.84%);
+  overflow: hidden;
+  border-radius: var(--border-radius-large);
+
+  &__image {
+    grid-column: span 5;
+
+    @include tablet {
+      display: none;
+    }
+
+    & img {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__form {
+    grid-column: span 7;
+    display: flex;
+    gap: 6px;
+    flex-direction: column;
+    justify-content: center;
+    margin: 40px 36px 40px 0;
+
+    @include tablet {
+      grid-column: span 12;
+      margin: 20px;
+    }
+  }
+
+  &__field {
+    display: flex;
+    gap: 6px;
+    width: 100%;
+
+    @include tablet {
+      flex-direction: column;
+    }
+  }
+  &__agreement {
+    display: flex;
+    gap: 16px;
+    margin-top: 32px;
+
+    @include mobile {
+      flex-direction: column;
+    }
+
+    & p {
+      font-weight: 400;
+      font-size: 14px;
+      text-align: right;
+      color: var(--color-dark);
+    }
+  }
+
+  &__button {
+    width: 100%;
+    background-color: var(--color-light);
+    color: var(--color-dark);
+  }
+}
